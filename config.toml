@@ -1,0 +1,9 @@
+baseURL = "https://blog.meisophant.name.ng/"
+languageCode = "en-us"
+title = "Meisophant Tech Blog"
+theme = "your-theme-name"
+enableRobotsTXT = true
+
+# params for colors or site-wide settings
+[params]
+primaryColor = "mediumpurple"
