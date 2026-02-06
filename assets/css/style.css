@@ -114,3 +114,22 @@ button:hover, .get_started-button:hover {
 .footer-links a:hover {
   text-decoration: underline;
 }
+
+.blog-home {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.posts-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-item h2 a {
+  text-decoration: none;
+}
+
+.post-item a:hover {
+  text-decoration: underline;
+}
