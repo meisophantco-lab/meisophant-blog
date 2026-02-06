@@ -143,3 +143,41 @@ button:hover, .get_started-button:hover {
   text-decoration: underline;
   color: mediumpurple;
 }
+
+.content-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.main-content {
+  flex: 3;
+}
+
+.sidebar {
+  flex: 1;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  font-size: 1.2rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.sidebar ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
