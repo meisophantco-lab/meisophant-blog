@@ -1,0 +1,28 @@
+<aside class="sidebar">
+  <section class="latest-posts">
+    <h3 style="color: mediumpurple;">Latest Posts</h3>
+    <ul>
+      {{ range first 5 (where .Site.RegularPages "Type" "posts") }}
+        <li><a href="{{ .Permalink }}" style="color: mediumpurple;">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+
+  <section class="categories">
+    <h3 style="color: mediumpurple;">Categories</h3>
+    <ul>
+      {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+        <li><a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}" style="color: mediumpurple;">{{ $name }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+
+  <section class="tags">
+    <h3 style="color: mediumpurple;">Tags</h3>
+    <ul>
+      {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+        <li><a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}" style="color: mediumpurple;">{{ $name }}</a></li>
+      {{ end }}
+    </ul>
+  </section>
+</aside>
