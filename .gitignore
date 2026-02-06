@@ -1,0 +1,22 @@
+# Hugo generated files
+/public/
+
+# Hugo cache
+/resources/_gen/
+ 
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# Node.js (if using any npm/yarn tools for assets)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# IDEs
+.vscode/
+.idea/
+*.swp
