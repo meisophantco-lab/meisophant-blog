@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ .Title }}</title>
+  <link rel="stylesheet" href="/css/style.css">
+
+  <!-- Open Graph & Twitter -->
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ .Description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://blog.meisophant.name.ng/">
+  <meta property="og:image" content="https://meisophant.name.ng/logo1.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Shapo Widget -->
+  <script src="https://cdn.shapo.io/js/embed.js" defer></script>
+</head>
+<body>
+
+<header>
+  <h1 style="color: mediumpurple;">Meisophant Tech Blog</h1>
+  <nav>
+    <a href="/">Home</a>
+    <a href="/about/">About</a>
+    <a href="/contact/">Contact</a>
+  </nav>
+</header>
+
+<div class="content-wrapper">
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <aside>
+    {{ partial "sidebar.html" . }}
+  </aside>
+</div>
+
+<footer>
+  <p>&copy; Meisophant Digital Services 2026. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
