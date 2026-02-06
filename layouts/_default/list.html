@@ -1,8 +1,16 @@
 {{ define "main" }}
-<h1>{{ .Title }}</h1>
-<ul>
-  {{ range .Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a> - <small>{{ .Date.Format "Jan 2, 2006" }}</small></li>
-  {{ end }}
-</ul>
+<main class="blog-home">
+  <h1 style="color: mediumpurple;">{{ .Title }}</h1>
+  <p>{{ .Description }}</p>
+
+  <div class="posts-list">
+    {{ range .Pages }}
+      <article class="post-item">
+        <h2><a href="{{ .Permalink }}" style="color: mediumpurple;">{{ .Title }}</a></h2>
+        <p>{{ .Summary }}</p>
+        <a href="{{ .Permalink }}">Read More →</a>
+      </article>
+    {{ end }}
+  </div>
+</main>
 {{ end }}
