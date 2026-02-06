@@ -9,3 +9,24 @@
   </p>
   <a href="{{ .Permalink }}">Read More →</a>
 </article>
+<div class="content-wrapper">
+  <main class="main-content">
+    {{ range .Paginator.Pages }}
+      <article class="post-item">
+        <h2><a href="{{ .Permalink }}" style="color: mediumpurple;">{{ .Title }}</a></h2>
+        <p>{{ .Summary }}</p>
+        <p>
+          Categories: 
+          {{ range .Params.categories }}
+            <a href="/categories/{{ . | urlize }}" style="color: mediumpurple;">{{ . }}</a>
+          {{ end }}
+        </p>
+        <a href="{{ .Permalink }}">Read More →</a>
+      </article>
+    {{ end }}
+
+    {{ template "_internal/pagination.html" . }}
+  </main>
+
+  {{ partial "sidebar.html" . }}
+</div>
