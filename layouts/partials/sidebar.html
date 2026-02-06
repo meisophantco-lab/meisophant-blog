@@ -1,7 +1,11 @@
 <aside class="sidebar">
+  <section class="search">
+    <input type="text" id="searchInput" placeholder="Search posts..." style="width: 100%; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
+  </section>
+
   <section class="latest-posts">
     <h3 style="color: mediumpurple;">Latest Posts</h3>
-    <ul>
+    <ul id="latestPosts">
       {{ range first 5 (where .Site.RegularPages "Type" "posts") }}
         <li><a href="{{ .Permalink }}" style="color: mediumpurple;">{{ .Title }}</a></li>
       {{ end }}
