@@ -1,23 +1,37 @@
 [
-    {
-        "title": "The Rise of AI in Everyday Tech",
-        "snippet": "Artificial Intelligence is now everywhere. Here's how it's shaping technology.",
-        "image": "images/ai.jpg",
-        "date": "2026-02-12",
-        "author": "Adewale Emmanuel"
-    },
-    {
-        "title": "Cloud Computing Tips for Small Businesses",
-        "snippet": "Learn how cloud computing can improve your startup or small business operations.",
-        "image": "images/cloud.jpg",
-        "date": "2026-02-10",
-        "author": "Adewale Emmanuel"
-    },
-    {
-        "title": "Web Security Best Practices in 2026",
-        "snippet": "Keep your website safe with these modern security strategies and tools.",
-        "image": "images/security.jpg",
-        "date": "2026-02-08",
-        "author": "Adewale Emmanuel"
-    }
+  {
+    "title": "Top 5 JavaScript Tricks Every Developer Should Know",
+    "date": "2026-02-12",
+    "author": "Adewale Emmanuel",
+    "image": "images/js-tricks.jpg",
+    "content": "<p>JavaScript is an extremely versatile language used for web development. In this post, we’ll explore five essential JavaScript tricks that can drastically improve your coding efficiency, readability, and functionality.</p><p>1️⃣ <strong>Destructuring Objects and Arrays:</strong> Simplify your code by extracting values from arrays or objects into variables quickly. Example: <code>const {name, age} = user;</code></p><p>2️⃣ <strong>Template Literals:</strong> Use backticks for dynamic strings instead of traditional concatenation. Example: <code>console.log(`Hello ${name}`);</code></p><p>3️⃣ <strong>Arrow Functions:</strong> Compact syntax for functions and lexical binding of <code>this</code>. Example: <code>const sum = (a,b) => a+b;</code></p><p>4️⃣ <strong>Async/Await:</strong> Handle asynchronous operations in a clean, readable way. Example: <code>const data = await fetchData();</code></p><p>5️⃣ <strong>Spread Operators:</strong> Quickly copy arrays, merge objects, and more. Example: <code>const newArr = [...arr1, ...arr2];</code></p><p>By mastering these tricks, you’ll write cleaner, faster, and modern JavaScript code. Practice them in real projects to see significant improvement in your development workflow.</p>"
+  },
+  {
+    "title": "Understanding CSS Grid Layouts for Modern Websites",
+    "date": "2026-02-10",
+    "author": "Adewale Emmanuel",
+    "image": "images/css-grid.jpg",
+    "content": "<p>CSS Grid is a powerful system that allows web developers to create complex, responsive layouts with ease. Unlike Flexbox, Grid handles both rows and columns simultaneously, making layout design more flexible and precise.</p><p>Some key concepts include <strong>grid-template-columns</strong>, <strong>grid-template-rows</strong>, and <strong>grid-template-areas</strong>. Using <code>minmax()</code> and <code>auto-fit</code>, you can make your grids responsive without relying on media queries.</p><p>In this post, we’ll explore practical examples of header-footer-layouts, magazine-style grids, and multi-column galleries. By mastering Grid, you can create professional layouts that work perfectly on desktop, tablet, and mobile devices.</p>"
+  },
+  {
+    "title": "Cloud Hosting vs Shared Hosting: Which is Best for Startups?",
+    "date": "2026-02-08",
+    "author": "Adewale Emmanuel",
+    "image": "images/cloud-hosting.jpg",
+    "content": "<p>When launching a startup, choosing the right hosting plan is crucial. Shared hosting is affordable and simple, but can be slow and less secure. Cloud hosting offers scalability, reliability, and better performance but comes at a higher price.</p><p>This post breaks down the pros and cons of each, including uptime guarantees, security features, server control, and scalability options. Startups that expect rapid growth often benefit from cloud hosting because it can easily handle traffic spikes and allows developers more freedom with server configurations.</p><p>We also provide step-by-step advice on migrating from shared to cloud hosting without downtime and how to optimize server performance to reduce latency.</p>"
+  },
+  {
+    "title": "Essential Tools Every Web Developer Should Use in 2026",
+    "date": "2026-02-06",
+    "author": "Adewale Emmanuel",
+    "image": "images/dev-tools.jpg",
+    "content": "<p>Modern web development requires the right set of tools to build efficient, maintainable, and high-quality websites. This post covers essential tools that every developer should know about in 2026.</p><p>We cover code editors (VS Code, Sublime Text), version control (Git, GitHub), CSS preprocessors (Sass, LESS), JavaScript frameworks (React, Vue, Angular), and productivity tools (Docker, Postman).</p><p>Additionally, we dive into debugging, testing, and deployment practices, showing how each tool contributes to faster development and fewer bugs. By integrating these tools into your workflow, you’ll work smarter and deliver professional-grade websites.</p>"
+  },
+  {
+    "title": "How to Optimize Website Performance for SEO and User Experience",
+    "date": "2026-02-04",
+    "author": "Adewale Emmanuel",
+    "image": "images/website-seo.jpg",
+    "content": "<p>Website performance directly affects user experience and SEO rankings. Slow-loading websites lose traffic and reduce engagement. In this detailed guide, we explore techniques to optimize performance for both users and search engines.</p><p>We cover image optimization, minifying CSS/JS files, using caching strategies, lazy loading, and leveraging CDNs. We also show practical examples of performance monitoring tools like Lighthouse, PageSpeed Insights, and GTmetrix.</p><p>By following these optimization techniques, your website can achieve faster load times, improved SEO rankings, and a better user experience, leading to higher engagement and conversion rates.</p>"
+  }
 ]
