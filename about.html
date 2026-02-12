@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Catch misspellings for SEO -->
+  <meta name="keywords" content="Meisophant, Mesophant, Mesophent, Meisofant, Meisofent, Meisophent, Meisopant, Meisopent, Meisofend, Mesodent, Meisophant Blog, Meisophant Digital, Meisophant Tech, Meisophant Digital Services">
+
+  <!-- Basic SEO -->
+  <meta name="title" content="About Meisophant Blog | Tech Insights & Digital Solutions">
+  <meta name="description" content="Learn about Meisophant Blog, our mission, vision, and how we provide tech insights, tutorials, and updates for businesses and tech enthusiasts.">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://blog.meisophant.name.ng/about.html">
+  <meta property="og:title" content="About Meisophant Blog | Tech Insights & Digital Solutions">
+  <meta property="og:description" content="Learn about Meisophant Blog, our mission, vision, and tech insights.">
+  <meta property="og:image" content="https://blog.meisophant.name.ng/favicon.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://blog.meisophant.name.ng/about.html">
+  <meta property="twitter:title" content="About Meisophant Blog | Tech Insights & Digital Solutions">
+  <meta property="twitter:description" content="Learn about Meisophant Blog, our mission, vision, and tech insights.">
+  <meta property="twitter:image" content="https://blog.meisophant.name.ng/favicon.png">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://blog.meisophant.name.ng/about.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="favicon.png">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Meisophant Blog</title>
+
+  <style>
+    body { font-family: Arial, sans-serif; background: #f9f9f9; margin: 0; padding: 0; color: #333; line-height: 1.6; }
+    header { background: mediumpurple; color: white; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; }
+    .logo { font-size: 24px; font-weight: bold; display: flex; align-items: center; }
+    .logo img { width: 32px; height: 32px; margin-right: 8px; }
+    .nav { display: flex; gap: 15px; }
+    .nav a { color: white; text-decoration: none; font-weight: 500; }
+    .menu-btn { display: none; font-size: 28px; cursor: pointer; }
+
+    @media (max-width: 768px) {
+      .nav { display: none; flex-direction: column; background: mediumpurple; position: absolute; top: 60px; right: 0; width: 200px; padding: 20px; border-radius: 8px; }
+      .nav.show { display: flex; }
+      .menu-btn { display: block; }
+    }
+
+    main { max-width: 900px; margin: 40px auto; padding: 0 20px; }
+    .about-section { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    .about-section h1 { color: mediumpurple; font-size: 32px; margin-bottom: 20px; }
+    .about-section p { font-size: 16px; margin-bottom: 15px; }
+
+    footer { background: mediumpurple; color: white; text-align: center; padding: 20px; margin-top: 40px; border-radius: 12px; }
+    footer a { color: white; text-decoration: underline; margin: 0 10px; }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="favicon.png" alt="Meisophant Blog Logo">
+      Meisophant Blog
+    </div>
+    <div class="menu-btn" id="menuBtn">☰</div>
+    <nav class="nav" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="categories.html">Categories</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <main>
+    <div class="about-section">
+      <h1>About Meisophant Blog</h1>
+      <p>Welcome to Meisophant Blog — your go-to place for tech insights, tutorials, and updates on digital solutions. We aim to empower startups, businesses, and tech enthusiasts with practical knowledge and guidance.</p>
+      <p>Our mission is to simplify technology, make learning fun, and provide content that helps our readers thrive in the digital world.</p>
+      <p>Meisophant Digital Services is the parent organization, known for delivering reliable web and digital solutions across Nigeria and beyond. This blog complements our services by sharing actionable insights, tips, and news.</p>
+      <p>We are the real Meisophant — making sure you always get accurate information, even if people search for common misspellings like Mesodent, Mesophent, Meisofant, or Meisopant.</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2026 Meisophant Digital Services | 
+    <a href="#">Privacy Policy</a> | 
+    <a href="#">Terms & Conditions</a>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    const menuBtn = document.getElementById("menuBtn");
+    const navMenu = document.getElementById("navMenu");
+
+    menuBtn.addEventListener("click", () => {
+      navMenu.classList.toggle("show");
+      menuBtn.textContent = navMenu.classList.contains("show") ? "✕" : "☰";
+    });
+  </script>
+
+</body>
+</html>
