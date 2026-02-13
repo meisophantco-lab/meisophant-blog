@@ -1,24 +1,22 @@
-fetch("posts.json")
-  .then(res => res.json())
+fetch("./posts.json")
+  .then(response => response.json())
   .then(posts => {
     const container = document.getElementById("posts-container");
 
-    if (!container) return;
+    posts.forEach((post, index) => {
+      const card = document.createElement("div");
+      card.className = "post-card";
 
-    posts.forEach(post => {
-      const div = document.createElement("div");
-      div.className = "post-card";
-
-      div.innerHTML = `
+      card.innerHTML = `
         <h2>${post.title}</h2>
         <small>${post.date} • ${post.author}</small>
-        <p>${post.excerpt}</p>
-        <a href="post.html?id=${post.id}">Read More →</a>
+        <p>${post.content.substring(0, 200)}...</p>
+        <a href="post.html?id=${index}">Read More →</a>
       `;
 
-      container.appendChild(div);
+      container.appendChild(card);
     });
   })
-  .catch(err => {
-    console.error("Posts loading error:", err);
+  .catch(error => {
+    console.error("Error loading posts:", error);
   });
