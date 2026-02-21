@@ -1,15 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Meisophant Blog | Web, Tech & Digital Knowledge</title>
+<title>Meisophant Blog — Tech Insights, Tutorials & Guides</title>
 
-<meta name="description" content="Read high-quality tutorials, insights and guides on web development, technology, cloud computing and digital solutions by Meisophant Digital Services.">
+<meta name="description" content="Meisophant Blog delivers modern web development tutorials, hosting guides, and digital strategy insights.">
 
-<link rel="icon" href="../favicon.png">
-<link rel="stylesheet" href="./style.css">
+<link rel="icon" href="./favicon.png">
+<link rel="stylesheet" href="style.css">
+
+<style>
+.blog-container{
+  max-width:1200px;
+  margin:40px auto;
+  padding:0 20px;
+}
+
+.blog-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:25px;
+}
+
+.post-card{
+  background:#fff;
+  border-radius:14px;
+  overflow:hidden;
+  box-shadow:0 6px 20px rgba(0,0,0,.08);
+  display:flex;
+  flex-direction:column;
+}
+
+.post-card img{
+  width:100%;
+  height:200px;
+  object-fit:cover;
+}
+
+.post-content{
+  padding:20px;
+  flex:1;
+  display:flex;
+  flex-direction:column;
+}
+
+.post-content h2{
+  margin-top:0;
+  font-size:1.3rem;
+  color:#222;
+}
+
+.post-content p{
+  color:#666;
+  flex:1;
+}
+
+.read-btn{
+  display:inline-block;
+  margin-top:15px;
+  background:mediumpurple;
+  color:white;
+  padding:10px 18px;
+  border-radius:6px;
+  text-decoration:none;
+  font-weight:500;
+  transition:.2s;
+  text-align:center;
+}
+
+.read-btn:hover{
+  background:#5c4bcf;
+  transform:translateY(-2px);
+}
+</style>
 
 </head>
 
@@ -22,78 +88,77 @@
 
   <nav class="nav" id="navMenu">
     <a href="../index.html">Main Site</a>
-    <a href="./index.html">Blog</a>
     <a href="../our-services.html">Services</a>
     <a href="../contact-us.html">Contact</a>
   </nav>
 </header>
 
-<section class="hero">
-  <h1>Meisophant Blog</h1>
-  <p>Practical guides, tutorials & insights on web, cloud & digital solutions.</p>
-</section>
+<main class="blog-container">
 
-<main class="container">
+<h1 style="text-align:center;margin-bottom:30px">Latest Articles</h1>
 
-  <div class="posts-grid">
+<div class="blog-grid">
 
-    <!-- Post 1 -->
-    <a href="./posts/js-tricks/index.html" class="post-card">
-      <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80" alt="JavaScript Coding">
-      <div class="post-content">
-        <h3>Top 5 JavaScript Tricks Every Developer Should Know</h3>
-        <p>Boost your productivity and write cleaner JavaScript using modern techniques.</p>
-      </div>
-    </a>
+<!-- POST 1 -->
+<div class="post-card">
+<img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80">
+<div class="post-content">
+<h2>Top 5 JavaScript Tricks Every Developer Should Know</h2>
+<p>Boost your coding speed, efficiency and readability with these powerful JavaScript techniques.</p>
+<a href="posts/js-tricks/" class="read-btn">Read More</a>
+</div>
+</div>
 
-    <!-- Post 2 -->
-    <a href="./posts/css-grid/index.html" class="post-card">
-      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" alt="CSS Grid">
-      <div class="post-content">
-        <h3>Understanding CSS Grid Layouts for Modern Websites</h3>
-        <p>Build powerful responsive layouts easily using CSS Grid system.</p>
-      </div>
-    </a>
+<!-- POST 2 -->
+<div class="post-card">
+<img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1200&q=80">
+<div class="post-content">
+<h2>Understanding CSS Grid Layouts for Modern Websites</h2>
+<p>Master responsive layout design using CSS Grid and build professional website structures.</p>
+<a href="posts/css-grid/" class="read-btn">Read More</a>
+</div>
+</div>
 
-    <!-- Post 3 -->
-    <a href="./posts/cloud-hosting/index.html" class="post-card">
-      <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80" alt="Cloud Hosting">
-      <div class="post-content">
-        <h3>Cloud Hosting vs Shared Hosting</h3>
-        <p>Which is best for startups? We break it down clearly.</p>
-      </div>
-    </a>
+<!-- POST 3 -->
+<div class="post-card">
+<img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=1200&q=80">
+<div class="post-content">
+<h2>Cloud Hosting vs Shared Hosting: Which is Best?</h2>
+<p>Compare hosting solutions and choose the right infrastructure for your startup or business.</p>
+<a href="posts/cloud-hosting/" class="read-btn">Read More</a>
+</div>
+</div>
 
-    <!-- Post 4 -->
-    <a href="./posts/dev-tools/index.html" class="post-card">
-      <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?auto=format&fit=crop&w=1200&q=80" alt="Developer Tools">
-      <div class="post-content">
-        <h3>Essential Tools Every Web Developer Should Use</h3>
-        <p>Boost efficiency, quality, and delivery speed.</p>
-      </div>
-    </a>
+<!-- POST 4 -->
+<div class="post-card">
+<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80">
+<div class="post-content">
+<h2>Essential Tools Every Web Developer Should Use in 2026</h2>
+<p>Discover productivity tools that improve workflow, speed, testing and deployment.</p>
+<a href="posts/dev-tools/" class="read-btn">Read More</a>
+</div>
+</div>
 
-    <!-- Post 5 -->
-    <a href="./posts/website-performance/index.html" class="post-card">
-      <img src="https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1200&q=80" alt="Website Performance">
-      <div class="post-content">
-        <h3>How to Optimize Website Performance for SEO</h3>
-        <p>Speed optimization techniques for better rankings.</p>
-      </div>
-    </a>
+<!-- POST 5 -->
+<div class="post-card">
+<img src="https://images.unsplash.com/photo-1562577309-2592ab84b1bc?auto=format&fit=crop&w=1200&q=80">
+<div class="post-content">
+<h2>How to Optimize Website Performance for SEO & UX</h2>
+<p>Learn how to improve loading speed, rankings and user engagement.</p>
+<a href="posts/website-performance/" class="read-btn">Read More</a>
+</div>
+</div>
 
-  </div>
+</div>
 
 </main>
 
 <div class="footer_div">
-  <p>© Meisophant Digital Services 2026 — Knowledge That Builds Power</p>
+<p>© Meisophant Digital Services 2026 — Knowledge That Builds Power</p>
 </div>
 
 <script>
-document.getElementById("menuBtn").onclick = () => {
-  document.getElementById("navMenu").classList.toggle("show");
-}
+menuBtn.onclick = () => navMenu.classList.toggle("show");
 </script>
 
 </body>
