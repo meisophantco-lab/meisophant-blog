@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Understanding CSS Grid Layouts for Modern Websites | Meisophant Blog</title>
+
+<meta name="description" content="Learn how CSS Grid helps developers build modern, responsive website layouts with speed and precision.">
+
+<link rel="stylesheet" href="../../style.css">
+<link rel="icon" href="../../../favicon.png">
+
+<style>
+.article-container{max-width:900px;margin:40px auto;padding:0 20px;line-height:1.8}
+.article-header img{width:100%;border-radius:12px;margin-bottom:20px}
+.meta{color:#777;font-size:.9rem;margin-bottom:30px}
+h2{color:mediumpurple;margin-top:40px}
+pre{background:#111;color:#fff;padding:15px;border-radius:8px;overflow-x:auto}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">Meisophant Blog</div>
+  <div class="menu-btn" id="menuBtn">☰</div>
+  <nav class="nav" id="navMenu">
+    <a href="../../index.html">Blog Home</a>
+    <a href="../../../index.html">Main Site</a>
+  </nav>
+</header>
+
+<article class="article-container">
+
+<div class="article-header">
+<img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=1400&q=80">
+<h1>Understanding CSS Grid Layouts for Modern Websites</h1>
+<div class="meta">By Adewale Emmanuel · Feb 10, 2026</div>
+</div>
+
+<p>CSS Grid is a revolutionary layout system that allows developers to create complex website layouts easily and efficiently.</p>
+
+<h2>What Is CSS Grid?</h2>
+<p>CSS Grid is a two-dimensional layout system that handles rows and columns simultaneously, unlike Flexbox which handles one direction at a time.</p>
+
+<h2>Why Developers Love CSS Grid</h2>
+<p>It provides precision, responsiveness, clean code, and flexible layout structures.</p>
+
+<h2>Basic Grid Example</h2>
+
+<pre><code>
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+</code></pre>
+
+<h2>Responsive Grids</h2>
+<p>With auto-fit, minmax and fractional units, layouts automatically adapt to screen sizes without media queries.</p>
+
+<h2>Conclusion</h2>
+<p>CSS Grid is essential for modern web design. Mastering it allows you to build professional-grade layouts efficiently.</p>
+
+</article>
+
+<script>
+menuBtn.onclick = () => navMenu.classList.toggle("show");
+</script>
+
+</body>
+</html>
