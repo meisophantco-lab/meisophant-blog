@@ -3,186 +3,95 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Meisophant Blog — Tech, Web & Digital Solutions</title>
 
-<meta name="description" content="Meisophant Blog shares tutorials, insights, tips and guides on web development, hosting, cloud, and digital solutions.">
-<meta name="keywords" content="Meisophant Blog, web development blog, Nigeria tech blog, hosting tutorials, cloud computing, frontend development">
+<title>Meisophant Blog | Web, Tech & Digital Knowledge</title>
+
+<meta name="description" content="Read high-quality tutorials, insights and guides on web development, technology, cloud computing and digital solutions by Meisophant Digital Services.">
 
 <link rel="icon" href="../favicon.png">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="./style.css">
 
-<style>
-body{
-  margin:0;
-  font-family:Inter,Arial,sans-serif;
-  background:#f7f7fb;
-  color:#222;
-}
-
-.header{
-  background:#222;
-  color:white;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:15px 20px;
-  position:sticky;
-  top:0;
-  z-index:1000;
-}
-
-.logo{
-  font-size:1.3rem;
-  font-weight:bold;
-}
-
-.menu-btn{
-  font-size:1.6rem;
-  cursor:pointer;
-  display:none;
-}
-
-.nav{
-  display:flex;
-  gap:18px;
-}
-
-.nav a{
-  color:white;
-  text-decoration:none;
-}
-
-.nav.show{
-  display:flex;
-  flex-direction:column;
-}
-
-.hero{
-  text-align:center;
-  padding:60px 20px;
-  background:linear-gradient(135deg, mediumpurple, #5b3cc4);
-  color:white;
-}
-
-.hero h1{
-  margin-bottom:10px;
-  font-size:2.2rem;
-}
-
-.container{
-  max-width:1200px;
-  margin:auto;
-  padding:30px 20px;
-}
-
-.posts-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-  gap:20px;
-}
-
-.post-card{
-  background:white;
-  border-radius:12px;
-  overflow:hidden;
-  box-shadow:0 6px 15px rgba(0,0,0,.08);
-  transition:.3s;
-}
-
-.post-card:hover{
-  transform:translateY(-4px);
-}
-
-.post-card img{
-  width:100%;
-  height:180px;
-  object-fit:cover;
-}
-
-.post-content{
-  padding:15px;
-}
-
-.post-content h3{
-  margin:0 0 8px;
-  color:mediumpurple;
-}
-
-.post-content p{
-  font-size:.9rem;
-  line-height:1.6;
-}
-
-.footer_div{
-  background:#222;
-  color:white;
-  text-align:center;
-  padding:25px 10px;
-  margin-top:60px;
-}
-
-@media(max-width:768px){
-  .menu-btn{display:block}
-  .nav{display:none;flex-direction:column;background:#222;padding:10px}
-}
-</style>
 </head>
 
 <body>
 
 <header class="header">
   <div class="logo">Meisophant Blog</div>
+
   <div class="menu-btn" id="menuBtn">☰</div>
+
   <nav class="nav" id="navMenu">
     <a href="../index.html">Main Site</a>
     <a href="./index.html">Blog</a>
+    <a href="../our-services.html">Services</a>
     <a href="../contact-us.html">Contact</a>
   </nav>
 </header>
 
 <section class="hero">
   <h1>Meisophant Blog</h1>
-  <p>Web Development • Cloud • Hosting • Digital Growth</p>
+  <p>Practical guides, tutorials & insights on web, cloud & digital solutions.</p>
 </section>
 
 <main class="container">
 
-<div class="posts-grid">
+  <div class="posts-grid">
 
-<a href="./posts/top-5-javascript-tricks/" class="post-card">
-  <img src="./posts/top-5-javascript-tricks/cover.jpg">
-  <div class="post-content">
-    <h3>Top 5 JavaScript Tricks for Modern Websites</h3>
-    <p>Learn powerful JavaScript techniques to make your websites faster, smarter and more interactive.</p>
+    <!-- Post 1 -->
+    <a href="./posts/js-tricks/index.html" class="post-card">
+      <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=80" alt="JavaScript Coding">
+      <div class="post-content">
+        <h3>Top 5 JavaScript Tricks Every Developer Should Know</h3>
+        <p>Boost your productivity and write cleaner JavaScript using modern techniques.</p>
+      </div>
+    </a>
+
+    <!-- Post 2 -->
+    <a href="./posts/css-grid/index.html" class="post-card">
+      <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&w=1200&q=80" alt="CSS Grid">
+      <div class="post-content">
+        <h3>Understanding CSS Grid Layouts for Modern Websites</h3>
+        <p>Build powerful responsive layouts easily using CSS Grid system.</p>
+      </div>
+    </a>
+
+    <!-- Post 3 -->
+    <a href="./posts/cloud-hosting/index.html" class="post-card">
+      <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=1200&q=80" alt="Cloud Hosting">
+      <div class="post-content">
+        <h3>Cloud Hosting vs Shared Hosting</h3>
+        <p>Which is best for startups? We break it down clearly.</p>
+      </div>
+    </a>
+
+    <!-- Post 4 -->
+    <a href="./posts/dev-tools/index.html" class="post-card">
+      <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?auto=format&fit=crop&w=1200&q=80" alt="Developer Tools">
+      <div class="post-content">
+        <h3>Essential Tools Every Web Developer Should Use</h3>
+        <p>Boost efficiency, quality, and delivery speed.</p>
+      </div>
+    </a>
+
+    <!-- Post 5 -->
+    <a href="./posts/website-performance/index.html" class="post-card">
+      <img src="https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=1200&q=80" alt="Website Performance">
+      <div class="post-content">
+        <h3>How to Optimize Website Performance for SEO</h3>
+        <p>Speed optimization techniques for better rankings.</p>
+      </div>
+    </a>
+
   </div>
-</a>
-
-<a href="./posts/css-grid-layouts/" class="post-card">
-  <img src="./posts/css-grid-layouts/cover.jpg">
-  <div class="post-content">
-    <h3>Mastering CSS Grid Layout</h3>
-    <p>A beginner-friendly guide to creating flexible, responsive website layouts using CSS Grid.</p>
-  </div>
-</a>
-
-<a href="./posts/cloud-hosting-vs-shared/" class="post-card">
-  <img src="./posts/cloud-hosting-vs-shared/cover.jpg">
-  <div class="post-content">
-    <h3>Cloud Hosting vs Shared Hosting</h3>
-    <p>Understand the differences between cloud hosting and shared hosting to choose the right option.</p>
-  </div>
-</a>
-
-</div>
 
 </main>
 
 <div class="footer_div">
-<p>© Meisophant Digital Services 2026</p>
+  <p>© Meisophant Digital Services 2026 — Knowledge That Builds Power</p>
 </div>
 
 <script>
-document.getElementById("menuBtn").onclick = function(){
+document.getElementById("menuBtn").onclick = () => {
   document.getElementById("navMenu").classList.toggle("show");
 }
 </script>
