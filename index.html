@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>TechPoint by Meisophant | Web Development, SEO & Programming Tutorials</title>
+
+<meta name="description" content="TechPoint delivers premium tutorials, developer guides, SEO strategies, hosting solutions, and coding resources.">
+
+<meta name="keywords" content="TechPoint, Web Development Blog, JavaScript Tutorials, Programming Guides, SEO Blog Nigeria">
+
+<meta name="author" content="MEISOPHANT DIGITAL SERVICES">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+
+
+<section class="hero">
+  <h1>TechPoint</h1>
+  <p>Premium Web Development, Programming & SEO Tutorials</p>
+
+  <input type="text" id="searchInput" placeholder="Search tutorials..." onkeyup="searchPosts()">
+</section>
+
+<section class="posts-grid" id="postsContainer">
+
+<!-- POST 1 -->
+<div class="post-card" data-category="web">
+  <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61">
+  <div class="post-content">
+    <h3>Top JavaScript Mistakes Developers Make Daily</h3>
+    <p>Daily JavaScript coding mistakes that silently break applications.</p>
+    <a href="posts/dev-mistakes-1/" class="read-btn">Read More</a>
+  </div>
+</div>
+
+<!-- POST 2 -->
+<div class="post-card" data-category="web">
+  <img src="https://images.unsplash.com/photo-1507721999472-8ed4421c4af2">
+  <div class="post-content">
+    <h3>CSS Mistakes That Destroy Responsive Design</h3>
+    <p>Responsive layout mistakes that ruin mobile experience.</p>
+    <a href="posts/dev-mistakes-2/" class="read-btn">Read More</a>
+  </div>
+</div>
+
+<!-- POST 3 -->
+<div class="post-card" data-category="security">
+  <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3">
+  <div class="post-content">
+    <h3>Security Mistakes Developers Make Every Day</h3>
+    <p>Common vulnerabilities that lead to hacking and data breaches.</p>
+    <a href="posts/dev-mistakes-3/" class="read-btn">Read More</a>
+  </div>
+</div>
+
+<!-- POST 4 -->
+<div class="post-card" data-category="performance">
+  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+  <div class="post-content">
+    <h3>Performance Mistakes That Slow Websites Down</h3>
+    <p>Critical mistakes that destroy website speed and SEO ranking.</p>
+    <a href="posts/dev-mistakes-4/" class="read-btn">Read More</a>
+  </div>
+</div>
+
+<!-- POST 5 -->
+<div class="post-card" data-category="scaling">
+  <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+  <div class="post-content">
+    <h3>Bad Coding Habits That Kill Scalability</h3>
+    <p>Bad coding practices that make growth impossible.</p>
+    <a href="posts/dev-mistakes-5/" class="read-btn">Read More</a>
+  </div>
+</div>
+
+</section>
+
+<footer>
+  <p>© 2026 MEISOPHANT DIGITAL SERVICES — Where Creativity Meets Code</p>
+</footer>
+<script src="./pagination.js"></script>
+<script src="./filter.js"></script>
+<script src="./search.js"></script>
+<script>
+function searchPosts() {
+  let input = document.getElementById("searchInput").value.toLowerCase();
+  let posts = document.getElementsByClassName("post-card");
+
+  for (let i = 0; i < posts.length; i++) {
+    let title = posts[i].innerText.toLowerCase();
+    posts[i].style.display = title.includes(input) ? "block" : "none";
+  }
+}
+</script>
+
+</body>
+</html>
