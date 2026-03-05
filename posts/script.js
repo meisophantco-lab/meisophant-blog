@@ -1,0 +1,1 @@
+menuBtn.onclick = () => navMenu.classList.toggle("show");
