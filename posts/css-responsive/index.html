@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        CSS Tricks for Modern Responsive Design | Meisophant Blog
+
+    </title>
+
+    <meta name="description"
+          content="Learn modern CSS techniques for creating responsive websites that look great on every device.">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="../../style.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <a href="../../index.html">
+
+                MEISOPHANT
+
+                <span>BLOG</span>
+
+            </a>
+
+        </div>
+
+        <ul class="nav-links">
+
+            <li>
+
+                <a href="../../index.html">
+
+                    Home
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../../index.html#articles">
+
+                    Articles
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../../categories.html">
+
+                    Categories
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../../about.html">
+
+                    About
+
+                </a>
+
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+
+    <!-- HERO -->
+
+    <section class="article-hero">
+
+        <div class="article-category">
+
+            CSS
+
+        </div>
+
+        <h1>
+
+            CSS Tricks for Modern Responsive Design
+
+        </h1>
+
+        <div class="article-meta">
+
+            <span>
+
+                June 10, 2026
+
+            </span>
+
+            <span>
+
+                •
+
+            </span>
+
+            <span>
+
+                4 min read
+
+            </span>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FEATURE IMAGE -->
+
+    <section class="article-image">
+
+        <img src="../../images/css-responsive.webp"
+             alt="Responsive Web Design">
+
+    </section>
+
+
+
+    <!-- ARTICLE -->
+
+    <article class="article-content">
+
+        <p>
+
+            Responsive design is no longer optional.
+
+            Users visit websites from phones, tablets, laptops and large desktop screens.
+
+            Your website should provide an excellent experience regardless of screen size.
+
+        </p>
+
+
+
+        <h2>
+
+            1. Use CSS Grid
+
+        </h2>
+
+        <p>
+
+            CSS Grid makes it easy to create layouts that automatically adjust to different screen sizes.
+
+            Instead of fixed widths, use flexible columns.
+
+        </p>
+
+<pre><code>
+
+.grid{
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(250px,1fr));
+
+gap:20px;
+
+}
+
+</code></pre>
+
+
+
+        <h2>
+
+            2. Embrace Flexbox
+
+        </h2>
+
+        <p>
+
+            Flexbox simplifies alignment and spacing.
+
+            It is perfect for navigation menus, cards and horizontal layouts.
+
+        </p>
+
+
+
+        <blockquote>
+
+            Grid controls the layout.
+
+            Flexbox controls alignment.
+
+            Use both together.
+
+        </blockquote>
+
+
+
+        <h2>
+
+            3. Use Relative Units
+
+        </h2>
+
+        <p>
+
+            Avoid relying entirely on pixels.
+
+            Use units like:
+
+        </p>
+
+        <ul>
+
+            <li>rem</li>
+
+            <li>em</li>
+
+            <li>%</li>
+
+            <li>vw</li>
+
+            <li>vh</li>
+
+        </ul>
+
+        <p>
+
+            Relative units adapt better across devices.
+
+        </p>
+
+
+
+        <h2>
+
+            4. Responsive Typography
+
+        </h2>
+
+        <p>
+
+            Large headings can look great on desktops but become overwhelming on mobile devices.
+
+            Use the CSS <code>clamp()</code> function to make text responsive.
+
+        </p>
+
+<pre><code>
+
+h1{
+
+font-size:
+
+clamp(
+
+2rem,
+
+5vw,
+
+4rem
+
+);
+
+}
+
+</code></pre>
+
+
+
+        <h2>
+
+            5. Media Queries Still Matter
+
+        </h2>
+
+        <p>
+
+            Modern CSS reduces the need for many breakpoints,
+
+            but media queries remain useful for making layout adjustments.
+
+        </p>
+
+<pre><code>
+
+@media(max-width:768px){
+
+.nav-links{
+
+display:none;
+
+}
+
+}
+
+</code></pre>
+
+
+
+        <h2>
+
+            6. Optimize Images
+
+        </h2>
+
+        <p>
+
+            Large images slow websites down.
+
+            Use compressed formats such as:
+
+        </p>
+
+        <ul>
+
+            <li>WebP</li>
+
+            <li>AVIF</li>
+
+            <li>Optimized JPEG</li>
+
+        </ul>
+
+        <p>
+
+            Responsive images improve both speed and user experience.
+
+        </p>
+
+
+
+        <h2>
+
+            7. Design Mobile First
+
+        </h2>
+
+        <p>
+
+            Start with the smallest screen.
+
+            Then progressively enhance the design for tablets and desktops.
+
+        </p>
+
+
+
+        <blockquote>
+
+            Mobile-first design forces you to focus on what truly matters.
+
+        </blockquote>
+
+
+
+        <h2>
+
+            Final Thoughts
+
+        </h2>
+
+        <p>
+
+            Modern CSS provides powerful tools for creating responsive websites.
+
+            By combining Grid, Flexbox, responsive typography and mobile-first thinking,
+
+            you can build interfaces that look beautiful everywhere.
+
+        </p>
+
+        <p>
+
+            Responsive design is not a feature —
+
+            it is an expectation.
+
+        </p>
+
+    </article>
+
+
+
+    <!-- AUTHOR -->
+
+    <section class="author-box">
+
+        <h3>
+
+            Written by
+
+            MEISOPHANT BLOG
+
+        </h3>
+
+        <p>
+
+            Practical tutorials,
+
+            AI insights,
+
+            SEO strategies and developer guides
+
+            for creators and innovators.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+        <h2>
+
+            Explore More CSS & Web Development Articles
+
+        </h2>
+
+        <p>
+
+            Learn modern web development
+
+            with practical tutorials
+
+            and real-world examples.
+
+        </p>
+
+        <a href="../../index.html#articles"
+           class="btn-primary">
+
+            View Articles
+
+        </a>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <div class="footer-logo">
+
+            MEISOPHANT BLOG
+
+        </div>
+
+        <div class="footer-links">
+
+            <a href="../../index.html">
+
+                Home
+
+            </a>
+
+            <a href="../../categories.html">
+
+                Categories
+
+            </a>
+
+            <a href="../../about.html">
+
+                About
+
+            </a>
+
+        </div>
+
+        <p>
+
+            © 2026
+
+            MEISOPHANT DIGITAL SERVICES —
+
+            Where Creativity Meets Code.
+
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
