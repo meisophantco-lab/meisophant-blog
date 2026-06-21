@@ -20,6 +20,90 @@ body{
     overflow-x:hidden;
 }
 
+/* ==========================
+   CATEGORIES PAGE
+========================== */
+
+.categories-page{
+
+padding:
+
+0 8% 100px;
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(280px,1fr));
+
+gap:30px;
+
+}
+
+.category-card{
+
+background:#111C33;
+
+border:1px solid rgba(255,255,255,.08);
+
+border-radius:22px;
+
+padding:35px;
+
+transition:.35s;
+
+display:block;
+
+}
+
+.category-card:hover{
+
+transform:
+
+translateY(-10px);
+
+background:#182643;
+
+box-shadow:
+
+0 20px 40px
+
+rgba(0,0,0,.25);
+
+}
+
+.category-icon{
+
+font-size:3rem;
+
+margin-bottom:20px;
+
+}
+
+.category-card h3{
+
+font-size:1.5rem;
+
+margin-bottom:15px;
+
+}
+
+.category-card p{
+
+color:#AAB4C8;
+
+margin-bottom:25px;
+
+}
+
+.category-card span{
+
+color:#FF7A00;
+
+font-weight:600;
+
+}
+
 img{
     width:100%;
     display:block;
