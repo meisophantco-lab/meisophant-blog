@@ -1,0 +1,61 @@
+[
+    {
+        "title": "How AI Is Transforming Web Development",
+        "description": "Discover how AI tools are helping developers build faster, debug smarter and deploy better websites.",
+        "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
+        "category": "AI",
+        "date": "June 21, 2026",
+        "readTime": "6 min read",
+        "link": "posts/ai-web-dev/"
+    },
+
+    {
+        "title": "Top JavaScript Mistakes Developers Make",
+        "description": "Common JavaScript mistakes that silently break applications and hurt performance.",
+        "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
+        "category": "JavaScript",
+        "date": "June 18, 2026",
+        "readTime": "5 min read",
+        "link": "posts/js-mistakes/"
+    },
+
+    {
+        "title": "10 SEO Techniques That Still Work",
+        "description": "Practical SEO strategies that can help websites rank better in search engines.",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=900&q=80",
+        "category": "SEO",
+        "date": "June 14, 2026",
+        "readTime": "7 min read",
+        "link": "posts/seo-techniques/"
+    },
+
+    {
+        "title": "CSS Tricks for Modern Responsive Design",
+        "description": "Learn modern CSS techniques for building responsive and beautiful websites.",
+        "image": "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=900&q=80",
+        "category": "CSS",
+        "date": "June 10, 2026",
+        "readTime": "4 min read",
+        "link": "posts/css-responsive/"
+    },
+
+    {
+        "title": "Cybersecurity Basics Every Developer Should Know",
+        "description": "Essential security practices every web developer should implement.",
+        "image": "https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=900&q=80",
+        "category": "Security",
+        "date": "June 5, 2026",
+        "readTime": "8 min read",
+        "link": "posts/security-basics/"
+    },
+
+    {
+        "title": "How to Start Freelancing as a Developer",
+        "description": "A practical guide to landing clients and building a successful freelance career.",
+        "image": "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80",
+        "category": "Career",
+        "date": "June 1, 2026",
+        "readTime": "6 min read",
+        "link": "posts/freelancing/"
+    }
+]
