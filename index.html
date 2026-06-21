@@ -1,107 +1,406 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>TechPoint by Meisophant | Web Development, SEO & Programming Tutorials</title>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="TechPoint delivers premium tutorials, developer guides, SEO strategies, hosting solutions, and coding resources.">
+<title>
 
-<meta name="keywords" content="TechPoint, Web Development Blog, JavaScript Tutorials, Programming Guides, SEO Blog Nigeria">
+Meisophant Blog |
 
-<meta name="author" content="MEISOPHANT DIGITAL SERVICES">
+Web Development, AI & SEO
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<meta name="description"
 
-<link rel="stylesheet" href="./style.css">
+content="Practical tutorials and insights on Web Development, AI, SEO and Digital Technology.">
+
+<link rel="preconnect"
+
+href="https://fonts.googleapis.com">
+
+<link rel="preconnect"
+
+href="https://fonts.gstatic.com"
+
+crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+
+rel="stylesheet">
+
+<link rel="stylesheet"
+
+href="style.css">
 
 </head>
 
 <body>
 
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+<div class="logo">
+
+<a href="/">
+
+MEISOPHANT
+
+<span>
+
+BLOG
+
+</span>
+
+</a>
+
+</div>
+
+<ul class="nav-links">
+
+<li>
+
+<a href="/">Home</a>
+
+</li>
+
+<li>
+
+<a href="#articles">
+
+Articles</a>
+
+</li>
+
+<li>
+
+<a href="categories.html">
+
+Categories
+
+</a>
+
+</li>
+
+<li>
+
+<a href="about.html">
+
+About
+
+</a>
+
+</li>
+
+</ul>
+
+<div class="nav-right">
+
+<button class="search-btn">
+
+🔍
+
+</button>
+
+<button class="theme-btn">
+
+🌙
+
+</button>
+
+</div>
+
+</nav>
+
+
+<!-- HERO -->
 
 <section class="hero">
-  <h1>TechPoint</h1>
-  <p>Premium Web Development, Programming & SEO Tutorials</p>
 
-  <input type="text" id="searchInput" placeholder="Search tutorials..." onkeyup="searchPosts()">
-</section>
+<div class="hero-badge">
 
-<section class="posts-grid" id="postsContainer">
+MEISOPHANT BLOG
 
-<!-- POST 1 -->
-<div class="post-card" data-category="web">
-  <img src="https://images.unsplash.com/photo-1522075469751-3a6694fb2f61">
-  <div class="post-content">
-    <h3>Top JavaScript Mistakes Developers Make Daily</h3>
-    <p>Daily JavaScript coding mistakes that silently break applications.</p>
-    <a href="posts/dev-mistakes-1/" class="read-btn">Read More</a>
-  </div>
 </div>
 
-<!-- POST 2 -->
-<div class="post-card" data-category="web">
-  <img src="https://images.unsplash.com/photo-1507721999472-8ed4421c4af2">
-  <div class="post-content">
-    <h3>CSS Mistakes That Destroy Responsive Design</h3>
-    <p>Responsive layout mistakes that ruin mobile experience.</p>
-    <a href="posts/dev-mistakes-2/" class="read-btn">Read More</a>
-  </div>
-</div>
+<h1>
 
-<!-- POST 3 -->
-<div class="post-card" data-category="security">
-  <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3">
-  <div class="post-content">
-    <h3>Security Mistakes Developers Make Every Day</h3>
-    <p>Common vulnerabilities that lead to hacking and data breaches.</p>
-    <a href="posts/dev-mistakes-3/" class="read-btn">Read More</a>
-  </div>
-</div>
+Learn Web Development,
 
-<!-- POST 4 -->
-<div class="post-card" data-category="performance">
-  <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
-  <div class="post-content">
-    <h3>Performance Mistakes That Slow Websites Down</h3>
-    <p>Critical mistakes that destroy website speed and SEO ranking.</p>
-    <a href="posts/dev-mistakes-4/" class="read-btn">Read More</a>
-  </div>
-</div>
+AI & SEO
 
-<!-- POST 5 -->
-<div class="post-card" data-category="scaling">
-  <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
-  <div class="post-content">
-    <h3>Bad Coding Habits That Kill Scalability</h3>
-    <p>Bad coding practices that make growth impossible.</p>
-    <a href="posts/dev-mistakes-5/" class="read-btn">Read More</a>
-  </div>
+Like a Pro.
+
+</h1>
+
+<p>
+
+Practical tutorials,
+
+coding guides,
+
+AI insights,
+
+and digital growth strategies
+
+for developers,
+
+entrepreneurs,
+
+and creators.
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#articles"
+
+class="btn-primary">
+
+Explore Articles
+
+</a>
+
+<a href="about.html"
+
+class="btn-secondary">
+
+About Us
+
+</a>
+
 </div>
 
 </section>
+
+
+<!-- FEATURED -->
+
+<section class="featured">
+
+<div class="featured-image">
+
+<img
+
+src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80"
+
+alt="Featured Article">
+
+</div>
+
+<div class="featured-content">
+
+<div class="featured-tag">
+
+FEATURED
+
+</div>
+
+<h2>
+
+How AI Is Transforming
+
+Web Development
+
+</h2>
+
+<p>
+
+Explore how AI tools are changing
+
+the way developers build,
+
+debug and deploy modern websites.
+
+</p>
+
+<div class="featured-meta">
+
+<span>
+
+AI
+
+</span>
+
+<span>
+
+6 min read
+
+</span>
+
+</div>
+
+<a href="posts/ai-web-dev/"
+
+class="read-btn">
+
+Read Article →
+
+</a>
+
+</div>
+
+</section>
+
+
+<!-- CATEGORIES -->
+
+<section class="categories">
+
+<button class="active">
+
+All
+
+</button>
+
+<button>
+
+Web Dev
+
+</button>
+
+<button>
+
+AI
+
+</button>
+
+<button>
+
+SEO
+
+</button>
+
+<button>
+
+JavaScript
+
+</button>
+
+<button>
+
+Security
+
+</button>
+
+<button>
+
+Career
+
+</button>
+
+</section>
+
+
+<!-- LATEST ARTICLES -->
+
+<section
+
+class="posts-grid"
+
+id="articles">
+
+<!-- Cards will be generated by JavaScript -->
+
+</section>
+
+
+<!-- NEWSLETTER -->
+
+<section class="newsletter">
+
+<h2>
+
+Stay Updated
+
+</h2>
+
+<p>
+
+Get tutorials,
+
+AI insights,
+
+and digital tips
+
+delivered directly to you.
+
+</p>
+
+<form>
+
+<input
+
+type="email"
+
+placeholder="Enter your email">
+
+<button>
+
+Subscribe
+
+</button>
+
+</form>
+
+</section>
+
+
+<!-- FOOTER -->
 
 <footer>
-  <p>© 2026 MEISOPHANT DIGITAL SERVICES — Where Creativity Meets Code</p>
-</footer>
-<script src="./pagination.js"></script>
-<script src="./filter.js"></script>
-<script src="./search.js"></script>
-<script>
-function searchPosts() {
-  let input = document.getElementById("searchInput").value.toLowerCase();
-  let posts = document.getElementsByClassName("post-card");
 
-  for (let i = 0; i < posts.length; i++) {
-    let title = posts[i].innerText.toLowerCase();
-    posts[i].style.display = title.includes(input) ? "block" : "none";
-  }
-}
+<div class="footer-logo">
+
+MEISOPHANT BLOG
+
+</div>
+
+<div class="footer-links">
+
+<a href="/">
+
+Home
+
+</a>
+
+<a href="about.html">
+
+About
+
+</a>
+
+<a href="categories.html">
+
+Categories
+
+</a>
+
+</div>
+
+<p>
+
+© 2026
+
+MEISOPHANT DIGITAL SERVICES
+
+Where Creativity Meets Code.
+
+</p>
+
+</footer>
+
+
+<script src="main.js">
+
 </script>
 
 </body>
+
 </html>
