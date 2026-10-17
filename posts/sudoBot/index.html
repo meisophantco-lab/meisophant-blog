@@ -1,1 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Meet SudoBot: Your AI Sidekick for Coding, Debugging and Automation | Meisophant Blog</title>
+
+<meta name="description" content="Meet SudoBot, the AI assistant from Meisophant Digital Services that helps developers solve coding challenges, debug errors and automate repetitive tasks. See its features, use cases and how to get started.">
+<meta name="keywords" content="AI assistant, coding helper, developer tools, automation software, Meisophant Digital Services, SudoBot features, AI for developers, cybersecurity tools, AI coding assistant, tech productivity tools">
+
+<meta property="og:title" content="Meet SudoBot: Your AI Sidekick for Coding, Debugging and Automation">
+<meta property="og:description" content="The free AI assistant from Meisophant Digital Services for developers, hackers and tech enthusiasts.">
+<meta property="og:image" content="https://blog.meisophant.name.ng/posts/sudobot/sudobot-desktop-screenshot.jpg">
+<meta property="og:url" content="https://blog.meisophant.name.ng/posts/sudobot/">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" href="https://meisophant.name.ng/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<!-- Shared blog styles (root of the blog) -->
+<link rel="stylesheet" href="../../style.css">
+
+<style>
+/* Extra styles for article components that style.css doesn't cover.
+   They use the same colours as the blog's :root variables. */
+
+.article-content .lead{
+    font-size:1.3rem;
+    color:#ffffff;
+}
+
+.article-content a:not(.btn-primary){
+    color:var(--accent);
+    border-bottom:1px solid rgba(255,122,0,.4);
+}
+
+.article-content a:not(.btn-primary):hover{
+    border-bottom-color:var(--accent);
+}
+
+.article-content h3{
+    margin:35px 0 15px;
+    font-size:1.35rem;
+}
+
+.article-content ul,
+.article-content ol{
+    margin:0 0 30px 1.4rem;
+    color:#D8E0F0;
+}
+
+.article-content ul{ list-style:disc; }
+.article-content ol{ list-style:decimal; }
+
+.article-content li{
+    margin-bottom:12px;
+    padding-left:6px;
+}
+
+.article-content strong{
+    color:#ffffff;
+}
+
+.article-content code{
+    background:#111C33;
+    border:1px solid var(--border);
+    color:#FFB066;
+    padding:2px 7px;
+    border-radius:6px;
+    font-family:'Courier New',monospace;
+    font-size:.92em;
+}
+
+.article-content pre{
+    background:#0C1730;
+    border:1px solid var(--border);
+    border-radius:14px;
+    padding:18px 20px;
+    overflow-x:auto;
+    margin:15px 0 0;
+}
+
+.article-content pre code{
+    background:none;
+    border:none;
+    padding:0;
+    color:#D8E0F0;
+}
+
+/* Feature cards */
+.feature-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:22px;
+    margin:35px 0 50px;
+}
+
+.feature-card{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:18px;
+    padding:28px;
+    transition:.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-6px);
+    background:var(--card-hover);
+}
+
+.feature-card h3{
+    margin:0 0 12px;
+    font-size:1.2rem;
+}
+
+.feature-card p{
+    font-size:1rem;
+    line-height:1.7;
+    margin-bottom:14px;
+    color:var(--muted);
+}
+
+/* Comparison table */
+.table-wrap{
+    overflow-x:auto;
+    margin:30px 0 50px;
+    border:1px solid var(--border);
+    border-radius:16px;
+}
+
+.article-content table{
+    width:100%;
+    border-collapse:collapse;
+    font-size:1rem;
+}
+
+.article-content th{
+    text-align:left;
+    padding:16px 20px;
+    background:var(--card);
+    color:#ffffff;
+    border-bottom:1px solid var(--border);
+}
+
+.article-content td{
+    padding:16px 20px;
+    color:#D8E0F0;
+    border-bottom:1px solid var(--border);
+}
+
+.article-content tr:last-child td{
+    border-bottom:none;
+}
+
+/* Call to action */
+.cta-block{
+    margin:50px 0 20px;
+    padding:40px;
+    text-align:center;
+    background:linear-gradient(135deg,#111C33,#182643);
+    border-radius:20px;
+}
+
+.cta-block p{
+    margin-bottom:22px;
+}
+
+/* FAQ (native details/summary: no JavaScript needed) */
+.faq details{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:14px;
+    margin-bottom:14px;
+}
+
+.faq summary{
+    cursor:pointer;
+    padding:18px 22px;
+    font-weight:600;
+    list-style:none;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+}
+
+.faq summary::-webkit-details-marker{ display:none; }
+
+.faq summary::after{
+    content:"+";
+    color:var(--accent);
+    font-size:1.4rem;
+    line-height:1;
+}
+
+.faq details[open] summary::after{
+    content:"–";
+}
+
+.faq summary:focus-visible{
+    outline:2px solid var(--accent);
+    outline-offset:2px;
+    border-radius:14px;
+}
+
+.faq details p{
+    margin:0;
+    padding:0 22px 20px;
+    color:var(--muted);
+    font-size:1.05rem;
+    line-height:1.7;
+}
+
+/* Related posts */
+.related-links{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:20px;
+}
+
+.related-links a{
+    background:var(--card);
+    border:1px solid var(--border);
+    border-radius:16px;
+    padding:24px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.related-links a:hover{
+    transform:translateY(-6px);
+    background:var(--card-hover);
+    color:var(--accent);
+}
+
+@media(max-width:600px){
+    .article-content{ font-size:1.05rem; }
+    .cta-block{ padding:28px 20px; }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+<div class="logo">
+<a href="/">MEISOPHANT <span>BLOG</span></a>
+</div>
+
+<ul class="nav-links">
+<li><a href="/">Home</a></li>
+<li><a href="/#articles">Articles</a></li>
+<li><a href="/categories.html">Categories</a></li>
+<li><a href="/about.html">About</a></li>
+</ul>
+
+<div class="nav-right">
+<button class="search-btn" aria-label="Search">🔍</button>
+<button class="theme-btn" aria-label="Toggle theme">🌙</button>
+</div>
+
+</nav>
+
+
+<!-- ARTICLE HEADER -->
+<header class="article-hero">
+
+<div class="article-category">AI</div>
+
+<h1>Meet SudoBot: Your AI Sidekick for Coding, Debugging and Automation</h1>
+
+<div class="article-meta">
+<span>By Meisophant Digital Services</span>
+<span>17 Oct 2026</span>
+<span>5 min read</span>
+</div>
+
+</header>
+
+
+<!-- COVER IMAGE -->
+<section class="article-image">
+<img src="sudobot-desktop-screenshot.jpg" alt="SudoBot AI assistant interface showing a Python code example">
+</section>
+
+
+<!-- ARTICLE BODY -->
+<article class="article-content">
+
+<p class="lead">In the fast-paced world of software development, time is money. Debugging errors, writing clean code, and automating repetitive tasks can be time-consuming—but what if an AI assistant could handle it all?</p>
+
+<p>Meet <strong>SudoBot</strong>, the AI-powered assistant built by <a href="https://meisophant.name.ng/" target="_blank" rel="noopener noreferrer">Meisophant Digital Services</a>. Designed for developers, hackers, and tech enthusiasts, SudoBot doesn't just assist—it revolutionizes how you code, debug, and automate.</p>
+
+<h2>What Is SudoBot?</h2>
+
+<p>SudoBot is an advanced AI assistant that helps users:</p>
+
+<ul>
+<li><strong>Solve coding challenges</strong> with natural language queries.</li>
+<li><strong>Debug errors</strong> quickly and efficiently.</li>
+<li><strong>Automate repetitive tasks</strong> with precision.</li>
+<li><strong>Learn cybersecurity best practices</strong> (for ethical hackers).</li>
+<li><strong>Generate clean, optimized code</strong> in seconds.</li>
+</ul>
+
+<p>Unlike generic AI tools, SudoBot is tailored for developers, making it the ultimate productivity booster for anyone working in tech.</p>
+
+<h2>Key Features of SudoBot</h2>
+
+<div class="feature-grid">
+
+<div class="feature-card">
+<h3>1️⃣ Intelligent Code Assistance</h3>
+<p>Need help writing a function? SudoBot understands your intent and provides optimized solutions in Python, JavaScript, PHP, Bash, and more.</p>
+<p>Example query: "How do I write a secure password hashing function in PHP?"</p>
+<pre><code>$hashedPassword = password_hash($inputPassword, PASSWORD_BCRYPT);</code></pre>
+</div>
+
+<div class="feature-card">
+<h3>2️⃣ Debugging Made Easy</h3>
+<p>Stuck on a runtime error? SudoBot analyzes logs and suggests fixes without guesswork.</p>
+<p>Example issue: "My Flask app crashes with '404 Not Found'—why?"</p>
+<p>SudoBot reply: "Check your routes. Ensure <code>@app.route('/')</code> is correctly defined. Also, verify your <code>url_for()</code> calls match existing endpoints."</p>
+</div>
+
+<div class="feature-card">
+<h3>3️⃣ Automation for Developers</h3>
+<p>Tired of manual tasks? SudoBot automates workflows like generating boilerplate code, writing unit tests, and optimizing database queries.</p>
+</div>
+
+<div class="feature-card">
+<h3>4️⃣ Cybersecurity Guidance</h3>
+<p>For ethical hackers and security-conscious developers, SudoBot provides vulnerability detection tips, secure coding practices, and tool recommendations.</p>
+</div>
+
+</div>
+
+<h2>Why Choose SudoBot?</h2>
+
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Benefit</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Developer-Focused</td>
+<td>Built for coders, not generic AI.</td>
+</tr>
+<tr>
+<td>Fast &amp; Accurate</td>
+<td>Uses Meisophant's AI models for precision.</td>
+</tr>
+<tr>
+<td>Free &amp; Open</td>
+<td>No hidden costs—just pure utility.</td>
+</tr>
+<tr>
+<td>Cybersecurity-Aware</td>
+<td>Helps you write safer code.</td>
+</tr>
+<tr>
+<td>Continuously Updated</td>
+<td>New features based on real-world developer needs.</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h2>How Meisophant Built SudoBot</h2>
+
+<p>SudoBot wasn't built in a lab—it was crafted for real-world use. Here's how:</p>
+
+<h3>🔧 Built on Meisophant's Tech Stack</h3>
+<ul>
+<li><strong>AI Models:</strong> Optimized for coding, debugging, and automation.</li>
+<li><strong>Security:</strong> Follows OWASP guidelines to keep users safe.</li>
+<li><strong>Performance:</strong> Runs on high-speed infrastructure (no lag).</li>
+</ul>
+
+<h3>🚀 Designed for Developers, By Developers</h3>
+<p>Unlike generic AI tools, SudoBot was developed with input from real developers, ensuring it solves actual problems—not just theoretical ones.</p>
+
+<h2>How to Get Started with SudoBot</h2>
+
+<p>Ready to boost your productivity? Here's how:</p>
+
+<ol>
+<li>Visit <a href="https://sudobot.gt.tc" target="_blank" rel="noopener noreferrer">sudobot.gt.tc</a>.</li>
+<li>Ask a question—SudoBot will respond instantly.</li>
+<li>Start automating tasks you used to waste hours on.</li>
+</ol>
+
+<blockquote>
+<strong>Pro tip:</strong> Use <code>Markdown</code> for better code formatting in your queries.
+</blockquote>
+
+<div class="cta-block">
+<p>Ask your first question and see how SudoBot fits into your workflow.</p>
+<a href="https://sudobot.gt.tc" class="btn-primary" target="_blank" rel="noopener noreferrer">Try SudoBot Now</a>
+</div>
+
+<h2>FAQ: Common Questions About SudoBot</h2>
+
+<div class="faq">
+
+<details>
+<summary>Is SudoBot free?</summary>
+<p>✅ Yes! SudoBot is completely free to use—no subscriptions, no hidden fees.</p>
+</details>
+
+<details>
+<summary>What programming languages does SudoBot support?</summary>
+<p>🔹 Python, JavaScript, PHP, Bash, SQL, Java, C++, and more.</p>
+</details>
+
+<details>
+<summary>Can SudoBot help with cybersecurity?</summary>
+<p>✅ Absolutely! It provides vulnerability checks, secure coding tips, and tool recommendations.</p>
+</details>
+
+<details>
+<summary>How accurate is SudoBot?</summary>
+<p>📊 95%+ accuracy in coding assistance (based on real-world testing).</p>
+</details>
+
+<details>
+<summary>Is SudoBot safe to use?</summary>
+<p>🔒 Yes! Built by Meisophant Digital Services, a trusted Nigerian tech company.</p>
+</details>
+
+</div>
+
+<h2>Final Thoughts: The Future of AI Assistance</h2>
+
+<p>SudoBot isn't just another AI tool—it's a game-changer for developers. Whether you're debugging, automating, or learning, SudoBot is here to save you time and frustration.</p>
+
+<p>🚀 <strong>Try it today at <a href="https://sudobot.gt.tc" target="_blank" rel="noopener noreferrer">sudobot.gt.tc</a> and see how it transforms your workflow.</strong></p>
+
+</article>
+
+
+<!-- AUTHOR -->
+<div class="author-box">
+<h3>Meisophant Digital Services</h3>
+<p>Where Creativity Meets Code. We build web, AI and digital tools for developers, entrepreneurs and creators.</p>
+</div>
+
+
+<!-- RELATED -->
+<section class="related">
+
+<h2>Related Posts</h2>
+
+<div class="related-links">
+<a href="https://blog.meisophant.name.ng/posts/ai-web-dev/">How AI Is Transforming Web Development</a>
+<a href="https://blog.meisophant.name.ng/posts/css-responsive/">CSS Tricks for Modern Responsive Design</a>
+<a href="https://blog.meisophant.name.ng/posts/security-basics/">Cybersecurity Basics Every Developer Should Know</a>
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+<div class="footer-logo">MEISOPHANT BLOG</div>
+
+<div class="footer-links">
+<a href="../../">Home</a>
+<a href="../../about.html">About</a>
+<a href="../../categories.html">Categories</a>
+</div>
+
+<p>© 2026 MEISOPHANT DIGITAL SERVICES Where Creativity Meets Code.</p>
+
+</footer>
+
+</body>
+</html>
